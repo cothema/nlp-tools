@@ -1,9 +1,9 @@
 {
   "name": "cothema-nlp-tools",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Simple NLP Typescript Tools",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p ./tsconfig.build.json",
     "build:debug": "tsc --sourceMap -p ./tsconfig.build.json",
@@ -12,10 +12,14 @@
     "test:watch": "jest --config=./jest.config.js --watch",
     "lint": "tslint -p . --fix",
     "generate:barrels": "barrelsby -c barrelsby.json",
-    "prepublish": "npm run generate:barrels && npm run build"
+    "prepare": "npm run generate:barrels && npm run build"
   },
   "author": "Miloš Havlíček",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cothema/nlp-tools.git"
+  },
   "dependencies": {
     "reflect-metadata": "^0.1.13",
     "xregexp": "^5.0.1"

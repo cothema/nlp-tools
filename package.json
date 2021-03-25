@@ -1,7 +1,4 @@
 {
-  "name": "cothema-nlp-tools",
-  "version": "0.0.6",
-  "description": "Simple NLP Typescript Tools",
   "scripts": {
     "build": "lerna run build",
     "build:debug": "lerna run build:debug",

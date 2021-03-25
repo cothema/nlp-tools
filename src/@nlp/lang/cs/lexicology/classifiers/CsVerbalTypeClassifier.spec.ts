@@ -3,10 +3,15 @@ import { CsVerbalTypeClassifier } from "./CsVerbalTypeClassifier";
 
 describe("CsVerbalTypeClassifier", () => {
   test("Classify (DB)", async () => {
-    if (process.env.NLP20_TESTS_USE_DB !== "1") {
-      return;
-    }
-    const classifier = new CsVerbalTypeClassifier();
+    const repositoryMock = {
+      findWordWithSpecification: async (word: string) => {
+        return [
+          { noun_id: true },
+        ];
+      },
+    };
+
+    const classifier = new CsVerbalTypeClassifier(repositoryMock);
 
     expect(
       (await classifier.classifyFromString("aparátu")).verbalType.filter(

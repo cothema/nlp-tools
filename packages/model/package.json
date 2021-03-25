@@ -1,6 +1,6 @@
 {
   "name": "@cothema/nlp-model",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Model for natural language processing (NLP) TypeScript packages.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -33,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"
   },
-  "gitHead": "bbd65722d244c1ec862a972cfb1598a329e1101a"
+  "gitHead": "11330d8682e5a025b5c586c531045e1f71e7d95e"
 }

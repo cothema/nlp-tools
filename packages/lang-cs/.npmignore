@@ -1,0 +1,7 @@
+src/
+*.spec.ts
+*.spec.d.ts
+*.spec.js
+node_modules/
+.idea/
+.github/

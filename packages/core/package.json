@@ -1,6 +1,6 @@
 {
   "name": "@cothema/nlp-core",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Core natural language processing (NLP) TypeScript package.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -33,5 +33,5 @@
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"
   },
-  "gitHead": "de186f0cf0f9b92048cf66739869abd010c2774a"
+  "gitHead": "bbd65722d244c1ec862a972cfb1598a329e1101a"
 }

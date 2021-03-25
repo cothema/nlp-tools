@@ -1,0 +1,30 @@
+{
+  "name": "@cothema/nlp-model",
+  "version": "0.1.1",
+  "description": "Model for natural language processing (NLP) TypeScript packages.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "author": {
+    "email": "havlicek@cothema.com",
+    "name": "Miloš Havlíček"
+  },
+  "maintainers": [
+    {
+      "email": "havlicek@cothema.com",
+      "name": "Miloš Havlíček"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cothema/nlp-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cothema/nlp-tools/issues"
+  },
+  "dependencies": {
+  }
+}

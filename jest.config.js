@@ -1,7 +1,7 @@
 module.exports = {
   preset: "ts-jest",
   collectCoverage: false,
-  collectCoverageFrom: ["src/@nlp/**/*.{ts,tsx}", "!**/node_modules/**"],
+  collectCoverageFrom: ["packages/*/src/**/*.{ts,tsx}", "!**/node_modules/**"],
   coverageReporters: ["lcovonly", "text"],
   testEnvironment: "node",
   verbose: true,

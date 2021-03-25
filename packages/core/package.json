@@ -1,0 +1,30 @@
+{
+  "name": "@cothema/nlp-core",
+  "version": "0.1.1",
+  "description": "Core natural language processing (NLP) TypeScript package.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "author": {
+    "email": "havlicek@cothema.com",
+    "name": "Miloš Havlíček"
+  },
+  "maintainers": [
+    {
+      "email": "havlicek@cothema.com",
+      "name": "Miloš Havlíček"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cothema/nlp-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cothema/nlp-tools/issues"
+  },
+  "dependencies": {
+  }
+}

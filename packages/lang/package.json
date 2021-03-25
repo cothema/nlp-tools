@@ -1,6 +1,6 @@
 {
   "name": "@cothema/nlp-lang",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "General natural language processing (NLP) TypeScript package.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -24,7 +24,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cothema/nlp-tools.git"
+    "url": "git://github.com/cothema/nlp-tools.git",
+    "directory": "packages/lang"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"

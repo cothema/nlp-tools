@@ -2,17 +2,14 @@
   "name": "cothema-nlp-tools",
   "version": "0.0.6",
   "description": "Simple NLP Typescript Tools",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc -p ./tsconfig.build.json",
-    "build:debug": "rm -rf dist && tsc --sourceMap -p ./tsconfig.build.json",
+    "build": "lerna run build",
+    "build:debug": "lerna run build:debug",
     "test": "jest --config=./jest.config.js",
     "test:cov": "jest --config=./jest.config.js --coverage",
     "test:watch": "jest --config=./jest.config.js --watch",
     "lint": "tslint -p . --fix",
-    "generate:barrels": "barrelsby -c barrelsby.json",
-    "prepare": "npm run generate:barrels && npm run build"
+    "publish": "lerna run build && lerna publish"
   },
   "author": {
     "email": "havlicek@cothema.com",

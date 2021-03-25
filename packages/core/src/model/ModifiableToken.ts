@@ -1,6 +1,7 @@
 import { Token } from "./Token";
 import { TokenizableStringableEntity } from "./TokenizableStringableEntity";
 
+
 export class ModifiableToken<
   T extends TokenizableStringableEntity = TokenizableStringableEntity
 > extends Token<T> {

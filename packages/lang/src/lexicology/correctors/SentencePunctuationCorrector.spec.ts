@@ -1,4 +1,4 @@
-import { Sentence } from "../../../../model/src/orthography/Sentence";
+import { Sentence } from "@cothema/nlp-model";
 import { SentencePunctuationCorrector } from "./SentencePunctuationCorrector";
 
 describe("SentencePunctuationCorrector", () => {

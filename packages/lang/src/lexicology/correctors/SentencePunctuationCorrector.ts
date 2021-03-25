@@ -1,5 +1,5 @@
-import { ModifiableToken } from "../../../../model/src/core/ModifiableToken";
-import { Sentence } from "../../../../model/src/orthography/Sentence";
+import { ModifiableToken } from "@cothema/nlp-model";
+import { Sentence } from "@cothema/nlp-model";
 import { LexicologyErrorType } from "../enums/LexicologyErrorType";
 import { AbstractLexicologyCorrector } from "./AbstractLexicologyCorrector";
 

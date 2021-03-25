@@ -1,6 +1,6 @@
-import { IConverter } from "../../../../core/src/interfaces/IConverter";
-import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
-import { PhoneIpa } from "../../../../model/src/orthography/PhoneIpa";
+import { IConverter } from "@cothema/nlp-core";
+import { IStringable } from "@cothema/nlp-model";
+import { PhoneIpa } from "@cothema/nlp-model";
 import { CsSimplePhoneTokenizer } from "../tokenizers/CsSimplePhoneTokenizer";
 import { CsSimplePhonesToIpaConverter } from "./CsSimplePhonesToIpaConverter";
 

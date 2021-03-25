@@ -1,5 +1,5 @@
-import { Token } from "../../../../model/src/core/Token";
-import { Phone } from "../../../../model/src/orthography/Phone";
+import { Token } from "@cothema/nlp-model";
+import { Phone } from "@cothema/nlp-model";
 import { CsPairConsonantList } from "../lists/CsPairConsonantList";
 import { CsVoicedConsonantList } from "../lists/CsVoicedConsonantList";
 import { CsVoicelessConsonantList } from "../lists/CsVoicelessConsonantList";

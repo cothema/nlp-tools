@@ -1,5 +1,5 @@
-import { Dictionary } from "../../../../core/src/tools/Dictionary";
-import { Char } from "../../../../model/src/orthography/Char";
+import { Dictionary } from "@cothema/nlp-core";
+import { Char } from "@cothema/nlp-model";
 import { CharTokenizer } from "../tokenizers/CharTokenizer";
 
 export class RemoveDiacriticsNormalizer {

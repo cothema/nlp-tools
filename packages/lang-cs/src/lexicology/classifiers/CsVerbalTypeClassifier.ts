@@ -1,7 +1,7 @@
 import { ICsWordsRepository } from "../../repository/ICsWordsRepository";
-import { IClassifier } from "../../../../model/src/core/interfaces/IClassifier";
-import { LexicologyVerbalType } from "../../../../model/src/lexicology/enums/LexicologyVerbalType";
-import { Word } from "../../../../model/src/orthography/Word";
+import { IClassifier } from "@cothema/nlp-model";
+import { LexicologyVerbalType } from "@cothema/nlp-model";
+import { Word } from "@cothema/nlp-model";
 
 export class CsVerbalTypeClassifier implements IClassifier<Word> {
   constructor(private csWordsRepository: ICsWordsRepository) {}

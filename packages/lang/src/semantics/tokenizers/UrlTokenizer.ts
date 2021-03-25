@@ -1,7 +1,7 @@
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../model/src/core/Token";
-import { RegExpTokenizer } from "../../../../core/src/tokenizers/RegExpTokenizer";
-import { Url } from "../../../../model/src/semantics/Url";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { Token } from "@cothema/nlp-model";
+import { RegExpTokenizer } from "@cothema/nlp-core";
+import { Url } from "@cothema/nlp-model";
 import { EmailAddressValidator } from "../validators/EmailAddressValidator";
 import { UrlValidator } from "../validators/UrlValidator";
 

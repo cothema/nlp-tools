@@ -1,5 +1,5 @@
-import { Char } from "../../../../model/src/orthography/Char";
-import { Digraph } from "../../../../model/src/orthography/Digraph";
+import { Char } from "@cothema/nlp-model";
+import { Digraph } from "@cothema/nlp-model";
 
 export class DigraphHelper {
   static identifyDigraph(

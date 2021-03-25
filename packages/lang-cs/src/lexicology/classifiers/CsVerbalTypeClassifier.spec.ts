@@ -1,4 +1,4 @@
-import { LexicologyVerbalType } from "../../../../model/src/lexicology/enums/LexicologyVerbalType";
+import { LexicologyVerbalType } from "@cothema/nlp-model";
 import { CsVerbalTypeClassifier } from "./CsVerbalTypeClassifier";
 
 describe("CsVerbalTypeClassifier", () => {

@@ -1,4 +1,4 @@
-import { TokenizableStringableEntity } from "../../../../model/src/core/TokenizableStringableEntity";
+import { TokenizableStringableEntity } from "@cothema/nlp-model";
 import { SentenceValidator } from "./SentenceValidator";
 
 describe("SentenceValidator", () => {

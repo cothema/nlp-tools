@@ -1,4 +1,4 @@
-import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
+import { IStringable } from "@cothema/nlp-model";
 
 export class CsSimplePhoneValidator {
   validate(input: IStringable): boolean {

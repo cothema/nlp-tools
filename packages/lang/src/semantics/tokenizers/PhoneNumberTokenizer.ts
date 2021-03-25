@@ -1,6 +1,6 @@
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { RegExpTokenizer } from "../../../../core/src/tokenizers/RegExpTokenizer";
-import { PhoneNumber } from "../../../../model/src/semantics/PhoneNumber";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { RegExpTokenizer } from "@cothema/nlp-core";
+import { PhoneNumber } from "@cothema/nlp-model";
 import { PhoneNumberValidator } from "../validators/PhoneNumberValidator";
 
 export class PhoneNumberTokenizer

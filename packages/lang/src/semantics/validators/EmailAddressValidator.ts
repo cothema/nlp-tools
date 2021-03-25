@@ -1,4 +1,4 @@
-import { RegExpValidator } from "../../../../core/src/tokenizers/RegExpValidator";
+import { RegExpValidator } from "@cothema/nlp-core";
 
 export class EmailAddressValidator extends RegExpValidator {
   // https://stackoverflow.com/questions/15140955/use-javascript-to-find-email-address-in-a-string

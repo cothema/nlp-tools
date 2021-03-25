@@ -1,7 +1,7 @@
-import { ModifiableToken } from "../../../../model/src/core/ModifiableToken";
-import { TokenizableStringableEntity } from "../../../../model/src/core/TokenizableStringableEntity";
+import { ModifiableToken } from "@cothema/nlp-model";
+import { TokenizableStringableEntity } from "@cothema/nlp-model";
+import { LexicologyError } from "../enums/LexicologyError";
 import { LexicologyErrorType } from "../enums/LexicologyErrorType";
-import { LexicologyError } from "../core/LexicologyError";
 
 export abstract class AbstractLexicologyCorrector<
   T extends TokenizableStringableEntity = TokenizableStringableEntity

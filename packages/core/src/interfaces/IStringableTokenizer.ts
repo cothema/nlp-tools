@@ -1,6 +1,6 @@
-import { Token } from "../../../model/src/core/Token";
-import { TokenizableStringableEntity } from "../../../model/src/core/TokenizableStringableEntity";
-import { IStringable } from "../../../model/src/core/interfaces/IStringable";
+import { Token } from "@cothema/nlp-model";
+import { TokenizableStringableEntity } from "@cothema/nlp-model";
+import { IStringable } from "@cothema/nlp-model";
 
 export interface IStringableTokenizer<
   Entity extends TokenizableStringableEntity

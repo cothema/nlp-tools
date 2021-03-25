@@ -1,9 +1,9 @@
-import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../model/src/core/Token";
-import { StringableTokenizer } from "../../../../core/src/tokenizers/StringableTokenizer";
-import { Phone } from "../../../../model/src/orthography/Phone";
-import { Syllable } from "../../../../model/src/phonetics/Syllable";
+import { IStringable } from "@cothema/nlp-model";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { Token } from "@cothema/nlp-model";
+import { StringableTokenizer } from "@cothema/nlp-core";
+import { Phone } from "@cothema/nlp-model";
+import { Syllable } from "@cothema/nlp-model";
 import { CsDiphthongList } from "../lists/CsDiphthongList";
 import { CsVowelList } from "../lists/CsVowelList";
 import { CsSimplePhoneTokenizer } from "./CsSimplePhoneTokenizer";

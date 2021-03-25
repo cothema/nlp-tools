@@ -1,7 +1,7 @@
-import { Sentence } from "../../../model/src/orthography/Sentence";
-import { Text } from "../../../model/src/orthography/Text";
-import { Word } from "../../../model/src/orthography/Word";
-import { SentenceModality } from "../../../model/src/sematics/enums/SentenceModality";
+import { Sentence } from "@cothema/nlp-model";
+import { Text } from "@cothema/nlp-model";
+import { Word } from "@cothema/nlp-model";
+import { SentenceModality } from "@cothema/nlp-model";
 
 export class TextTokenizer {
   static readonly interpunction = [".", ",", "?", "!", ":"];

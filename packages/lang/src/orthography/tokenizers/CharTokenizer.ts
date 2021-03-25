@@ -1,8 +1,8 @@
-import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../model/src/core/Token";
-import { RegExpTokenizer } from "../../../../core/src/tokenizers/RegExpTokenizer";
-import { Char } from "../../../../model/src/orthography/Char";
+import { IStringable } from "@cothema/nlp-model";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { Token } from "@cothema/nlp-model";
+import { RegExpTokenizer } from "@cothema/nlp-core";
+import { Char } from "@cothema/nlp-model";
 
 export class CharTokenizer
   extends RegExpTokenizer<Char>

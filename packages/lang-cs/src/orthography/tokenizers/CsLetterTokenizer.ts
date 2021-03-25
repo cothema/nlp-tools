@@ -1,5 +1,5 @@
-import { Digraph } from "../../../../model/src/orthography/Digraph";
-import { LetterTokenizer } from "../../../../lang/src/orthography/tokenizers/LetterTokenizer";
+import { Digraph } from "@cothema/nlp-model";
+import { LetterTokenizer } from "@cothema/nlp-lang";
 
 /**
  * Includes only letters from alphabet (no spaces, special chars, punctuation etc.)

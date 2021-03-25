@@ -1,4 +1,4 @@
-import { Dictionary } from "../../../../core/src/tools/Dictionary";
+import { Dictionary } from "@cothema/nlp-core";
 
 export class CsPairConsonantsDictionary extends Dictionary {
   constructor() {

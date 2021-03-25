@@ -1,6 +1,6 @@
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { SplitRegExpTokenizer } from "../../../../core/src/tokenizers/SplitRegExpTokenizer";
-import { Word } from "../../../../model/src/orthography/Word";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { SplitRegExpTokenizer } from "@cothema/nlp-core";
+import { Word } from "@cothema/nlp-model";
 
 export class WordTokenizer
   extends SplitRegExpTokenizer<Word>

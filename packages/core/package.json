@@ -1,12 +1,12 @@
 {
   "name": "@cothema/nlp-core",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Core natural language processing (NLP) TypeScript package.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc -p ./tsconfig.json",
-    "build:debug": "rm -rf dist && tsc --sourceMap -p ./tsconfig.json",
+    "build": "rm -rf dist && npm run generate:barrels && tsc -p ./tsconfig.json",
+    "build:debug": "rm -rf dist && npm run generate:barrels && tsc --sourceMap -p ./tsconfig.json",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "generate:barrels": "barrelsby -c ../../barrelsby.json",
     "prepare": "npm run generate:barrels && npm run build"
@@ -35,6 +35,6 @@
   },
   "gitHead": "b79652c292d0b09cfa7dc1b69b6b552505f66af6",
   "dependencies": {
-    "@cothema/nlp-model": "0.0.13"
+    "@cothema/nlp-model": "^0.0.14"
   }
 }

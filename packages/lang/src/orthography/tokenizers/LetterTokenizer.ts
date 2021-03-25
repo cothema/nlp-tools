@@ -1,10 +1,10 @@
-import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../model/src/core/Token";
-import { StringableTokenizer } from "../../../../core/src/tokenizers/StringableTokenizer";
+import { IStringable } from "@cothema/nlp-model";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { Token } from "@cothema/nlp-model";
+import { StringableTokenizer } from "@cothema/nlp-core";
 import { DigraphHelper } from "../helpers/DigraphHelper";
-import { Digraph } from "../../../../model/src/orthography/Digraph";
-import { Letter } from "../../../../model/src/orthography/Letter";
+import { Digraph } from "@cothema/nlp-model";
+import { Letter } from "@cothema/nlp-model";
 import { LetterValidator } from "../validators/LetterValidator";
 import { CharTokenizer } from "./CharTokenizer";
 

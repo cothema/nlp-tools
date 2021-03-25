@@ -1,7 +1,7 @@
-import { IStringable } from "../../../model/src/core/interfaces/IStringable";
+import { IStringable } from "@cothema/nlp-model";
 import { IStringableTokenizer } from "../interfaces/IStringableTokenizer";
-import { Token } from "../../../model/src/core/Token";
-import { TokenizableStringableEntity } from "../../../model/src/core/TokenizableStringableEntity";
+import { Token } from "@cothema/nlp-model";
+import { TokenizableStringableEntity } from "@cothema/nlp-model";
 import { StringableTokenizer } from "./StringableTokenizer";
 
 export class SplitRegExpTokenizer<

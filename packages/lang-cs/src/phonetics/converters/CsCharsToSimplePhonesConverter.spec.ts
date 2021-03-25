@@ -1,4 +1,4 @@
-import { Char } from "../../../../model/src/orthography/Char";
+import { Char } from "@cothema/nlp-model";
 import { CsCharsToSimplePhonesConverter } from "./CsCharsToSimplePhonesConverter";
 
 describe("CsCharsToSimplePhonesConverter", () => {

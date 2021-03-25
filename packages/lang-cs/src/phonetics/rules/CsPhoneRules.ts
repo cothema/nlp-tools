@@ -1,6 +1,6 @@
-import { IRule } from "../../../../model/src/core/interfaces/IRule";
-import { Meta } from "../../../../model/src/orthography/Meta";
-import { Voice } from "../../../../model/src/orthography/Voice";
+import { IRule } from "@cothema/nlp-model";
+import { Meta } from "@cothema/nlp-model";
+import { Voice } from "@cothema/nlp-model";
 import { CsAddDiacriticsCaronDictionary } from "../dictionaries/CsAddDiacriticsCaronDictionary";
 import { CsPairConsonantsDictionary } from "../dictionaries/CsPairConsonantsDictionary";
 import { CsPhoneTools } from "./CsPhoneTools";

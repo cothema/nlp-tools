@@ -1,8 +1,8 @@
-import { IConverter } from "../../../../core/src/interfaces/IConverter";
-import { Dictionary } from "../../../../core/src/tools/Dictionary";
-import { Char } from "../../../../model/src/orthography/Char";
-import { Phone } from "../../../../model/src/orthography/Phone";
-import { PhoneIpa } from "../../../../model/src/orthography/PhoneIpa";
+import { IConverter } from "@cothema/nlp-core";
+import { Dictionary } from "@cothema/nlp-core";
+import { Char } from "@cothema/nlp-model";
+import { Phone } from "@cothema/nlp-model";
+import { PhoneIpa } from "@cothema/nlp-model";
 
 /**
  * Convert phones to IPA transcription

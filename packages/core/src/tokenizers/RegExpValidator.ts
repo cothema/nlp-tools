@@ -1,5 +1,5 @@
 import { IRegExpValidator } from "../interfaces/IRegExpValidator";
-import { IStringable } from "../../../model/src/core/interfaces/IStringable";
+import { IStringable } from "@cothema/nlp-model";
 
 export class RegExpValidator implements IRegExpValidator {
   regExp: RegExp;

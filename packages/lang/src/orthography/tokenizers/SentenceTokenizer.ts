@@ -1,6 +1,6 @@
-import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { RegExpTokenizer } from "../../../../core/src/tokenizers/RegExpTokenizer";
-import { Sentence } from "../../../../model/src/orthography/Sentence";
+import { IStringableTokenizer } from "@cothema/nlp-core";
+import { RegExpTokenizer } from "@cothema/nlp-core";
+import { Sentence } from "@cothema/nlp-model";
 import { SentenceValidator } from "../validators/SentenceValidator";
 
 export class SentenceTokenizer

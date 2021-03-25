@@ -1,4 +1,4 @@
-import { RegExpValidator } from "../../../../core/src/tokenizers/RegExpValidator";
+import { RegExpValidator } from "@cothema/nlp-core";
 
 export class SentenceValidator extends RegExpValidator {
   /**

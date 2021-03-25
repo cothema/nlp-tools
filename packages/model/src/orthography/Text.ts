@@ -1,5 +1,5 @@
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { StringableEntity } from "../../../core/src/model/StringableEntity";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { StringableEntity } from "../core/StringableEntity";
 import { Sentence } from "./Sentence";
 import { Word } from "./Word";
 

@@ -1,6 +1,6 @@
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { Token } from "../../../core/src/model/Token";
-import { TokenizableStringableEntity } from "../../../core/src/model/TokenizableStringableEntity";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { Token } from "../core/Token";
+import { TokenizableStringableEntity } from "../core/TokenizableStringableEntity";
 import { Letter } from "./Letter";
 import { Phone } from "./Phone";
 

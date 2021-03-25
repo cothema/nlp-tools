@@ -1,5 +1,5 @@
 import { IRegExpValidator } from "../interfaces/IRegExpValidator";
-import { IStringable } from "../interfaces/IStringable";
+import { IStringable } from "../../../model/src/core/interfaces/IStringable";
 
 export class RegExpValidator implements IRegExpValidator {
   regExp: RegExp;

@@ -1,4 +1,4 @@
-import { Token } from "../../../../core/src/model/Token";
+import { Token } from "../../../../model/src/core/Token";
 import { Phone } from "../../../../model/src/orthography/Phone";
 import { CsPairConsonantList } from "../lists/CsPairConsonantList";
 import { CsVoicedConsonantList } from "../lists/CsVoicedConsonantList";

@@ -1,7 +1,7 @@
 import { IMetaTokenizer } from "../../../../core/src/interfaces/IMetaTokenizer";
-import { IStringable } from "../../../../core/src/interfaces/IStringable";
+import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
 import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../core/src/model/Token";
+import { Token } from "../../../../model/src/core/Token";
 import { StringableTokenizer } from "../../../../core/src/tokenizers/StringableTokenizer";
 import { RuleBookTools } from "../../../../core/src/tools/RuleBookTools";
 import { Digraph } from "../../../../model/src/orthography/Digraph";

@@ -1,7 +1,7 @@
-import { IStringable } from "../interfaces/IStringable";
+import { IStringable } from "../../../model/src/core/interfaces/IStringable";
 import { IStringableTokenizer } from "../interfaces/IStringableTokenizer";
-import { Token } from "../model/Token";
-import { TokenizableStringableEntity } from "../model/TokenizableStringableEntity";
+import { Token } from "../../../model/src/core/Token";
+import { TokenizableStringableEntity } from "../../../model/src/core/TokenizableStringableEntity";
 import { StringableTokenizer } from "./StringableTokenizer";
 
 export class SplitRegExpTokenizer<

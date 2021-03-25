@@ -1,7 +1,7 @@
-import { IClonable } from "../../../core/src/interfaces/IClonable";
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { TokenizableStringableEntity } from "../../../core/src/model/TokenizableStringableEntity";
-import { SentenceModality } from "../../../lang/src/semantics/enums/SentenceModality";
+import { IClonable } from "../core/interfaces/IClonable";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { TokenizableStringableEntity } from "../core/TokenizableStringableEntity";
+import { SentenceModality } from "../sematics/enums/SentenceModality";
 
 export class Sentence
   extends TokenizableStringableEntity

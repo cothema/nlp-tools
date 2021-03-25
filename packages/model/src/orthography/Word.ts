@@ -1,6 +1,6 @@
-import { LexicologyVerbalType } from "../../../lang/src/lexicology/enums/LexicologyVerbalType";
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { TokenizableStringableEntity } from "../../../core/src/model/TokenizableStringableEntity";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { TokenizableStringableEntity } from "../core/TokenizableStringableEntity";
+import { LexicologyVerbalType } from "../lexicology/enums/LexicologyVerbalType";
 
 export class Word extends TokenizableStringableEntity implements ITypeMarked {
   type = "word";

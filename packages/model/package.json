@@ -5,21 +5,15 @@
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist && tsc -p ./tsconfig.json",
-    "build:debug": "rm -rf dist && tsc --sourceMap -p ./tsconfig.json",
+    "build": "rm -rf dist && npm run generate:barrels && tsc -p ./tsconfig.json",
+    "build:debug": "rm -rf dist && npm run generate:barrels && tsc --sourceMap -p ./tsconfig.json",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "generate:barrels": "barrelsby -c ../../barrelsby.json",
     "prepare": "npm run generate:barrels && npm run build"
   },
-  "author": {
-    "email": "havlicek@cothema.com",
-    "name": "Miloš Havlíček"
-  },
+  "author": "Miloš Havlíček <havlicek@cothema.com>",
   "maintainers": [
-    {
-      "email": "havlicek@cothema.com",
-      "name": "Miloš Havlíček"
-    }
+    "Miloš Havlíček <havlicek@cothema.com>"
   ],
   "license": "MIT",
   "repository": {
@@ -33,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"
   },
-  "gitHead": "11330d8682e5a025b5c586c531045e1f71e7d95e"
+  "homepage": "https://github.com/cothema/nlp-tools#readme"
 }

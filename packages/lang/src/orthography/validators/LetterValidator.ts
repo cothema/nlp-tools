@@ -1,4 +1,4 @@
-import { IStringable } from "../../../../core/src/interfaces/IStringable";
+import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
 import { LetterList } from "../lists/LetterList";
 
 export class LetterValidator {

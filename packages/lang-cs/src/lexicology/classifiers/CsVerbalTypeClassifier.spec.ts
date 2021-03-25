@@ -1,4 +1,4 @@
-import { LexicologyVerbalType } from "../../../../lang/src/lexicology/enums/LexicologyVerbalType";
+import { LexicologyVerbalType } from "../../../../model/src/lexicology/enums/LexicologyVerbalType";
 import { CsVerbalTypeClassifier } from "./CsVerbalTypeClassifier";
 
 describe("CsVerbalTypeClassifier", () => {

@@ -1,5 +1,5 @@
 import { IConverter } from "../../../../core/src/interfaces/IConverter";
-import { IStringable } from "../../../../core/src/interfaces/IStringable";
+import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
 import { PhoneIpa } from "../../../../model/src/orthography/PhoneIpa";
 import { CsSimplePhoneTokenizer } from "../tokenizers/CsSimplePhoneTokenizer";
 import { CsSimplePhonesToIpaConverter } from "./CsSimplePhonesToIpaConverter";

@@ -1,4 +1,4 @@
-import { IRule } from "../../../../core/src/interfaces/IRule";
+import { IRule } from "../../../../model/src/core/interfaces/IRule";
 import { Meta } from "../../../../model/src/orthography/Meta";
 import { Voice } from "../../../../model/src/orthography/Voice";
 import { CsAddDiacriticsCaronDictionary } from "../dictionaries/CsAddDiacriticsCaronDictionary";

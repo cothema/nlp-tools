@@ -1,4 +1,4 @@
-import { ModifiableToken } from "../../../../core/src/model/ModifiableToken";
+import { ModifiableToken } from "../../../../model/src/core/ModifiableToken";
 import { Sentence } from "../../../../model/src/orthography/Sentence";
 import { LexicologyErrorType } from "../enums/LexicologyErrorType";
 import { AbstractLexicologyCorrector } from "./AbstractLexicologyCorrector";

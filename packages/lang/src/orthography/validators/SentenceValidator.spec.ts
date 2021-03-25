@@ -1,4 +1,4 @@
-import { TokenizableStringableEntity } from "../../../../core/src/model/TokenizableStringableEntity";
+import { TokenizableStringableEntity } from "../../../../model/src/core/TokenizableStringableEntity";
 import { SentenceValidator } from "./SentenceValidator";
 
 describe("SentenceValidator", () => {

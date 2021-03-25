@@ -1,6 +1,6 @@
-import { IStringable } from "../../../../core/src/interfaces/IStringable";
+import { IStringable } from "../../../../model/src/core/interfaces/IStringable";
 import { IStringableTokenizer } from "../../../../core/src/interfaces/IStringableTokenizer";
-import { Token } from "../../../../core/src/model/Token";
+import { Token } from "../../../../model/src/core/Token";
 import { RegExpTokenizer } from "../../../../core/src/tokenizers/RegExpTokenizer";
 import { Char } from "../../../../model/src/orthography/Char";
 

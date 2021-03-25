@@ -1,6 +1,6 @@
-import { IRule } from "../../../core/src/interfaces/IRule";
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { TokenizableStringableEntity } from "../../../core/src/model/TokenizableStringableEntity";
+import { IRule } from "../core/interfaces/IRule";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { TokenizableStringableEntity } from "../core/TokenizableStringableEntity";
 
 /**
  * Meta object

@@ -1,8 +1,8 @@
-import { IStringable } from "../interfaces/IStringable";
+import { IStringable } from "../../../model/src/core/interfaces/IStringable";
 import { IStringableTokenizer } from "../interfaces/IStringableTokenizer";
 import { IValidator } from "../interfaces/IValidator";
-import { Token } from "../model/Token";
-import { TokenizableStringableEntity } from "../model/TokenizableStringableEntity";
+import { Token } from "../../../model/src/core/Token";
+import { TokenizableStringableEntity } from "../../../model/src/core/TokenizableStringableEntity";
 
 export abstract class StringableTokenizer<
   T extends TokenizableStringableEntity = TokenizableStringableEntity

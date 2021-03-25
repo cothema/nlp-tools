@@ -1,7 +1,7 @@
 import { Sentence } from "../../../model/src/orthography/Sentence";
 import { Text } from "../../../model/src/orthography/Text";
 import { Word } from "../../../model/src/orthography/Word";
-import { SentenceModality } from "../semantics/enums/SentenceModality";
+import { SentenceModality } from "../../../model/src/sematics/enums/SentenceModality";
 
 export class TextTokenizer {
   static readonly interpunction = [".", ",", "?", "!", ":"];

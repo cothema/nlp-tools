@@ -8,5 +8,5 @@ Model for natural language processing (NLP) TypeScript packages.
 ## Installation
 
 ```bash
-npm install @cothema-nlp/model
+npm install @cothema-nlp/core
 ```

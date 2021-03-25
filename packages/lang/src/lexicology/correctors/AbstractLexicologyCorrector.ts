@@ -1,7 +1,7 @@
-import { ModifiableToken } from "../../../../core/src/model/ModifiableToken";
-import { TokenizableStringableEntity } from "../../../../core/src/model/TokenizableStringableEntity";
+import { ModifiableToken } from "../../../../model/src/core/ModifiableToken";
+import { TokenizableStringableEntity } from "../../../../model/src/core/TokenizableStringableEntity";
 import { LexicologyErrorType } from "../enums/LexicologyErrorType";
-import { LexicologyError } from "../model/LexicologyError";
+import { LexicologyError } from "../core/LexicologyError";
 
 export abstract class AbstractLexicologyCorrector<
   T extends TokenizableStringableEntity = TokenizableStringableEntity

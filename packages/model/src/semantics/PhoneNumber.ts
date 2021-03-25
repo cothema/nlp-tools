@@ -1,5 +1,5 @@
-import { ITypeMarked } from "../../../core/src/interfaces/ITypeMarked";
-import { TokenizableStringableEntity } from "../../../core/src/model/TokenizableStringableEntity";
+import { ITypeMarked } from "../core/interfaces/ITypeMarked";
+import { TokenizableStringableEntity } from "../core/TokenizableStringableEntity";
 
 export class PhoneNumber
   extends TokenizableStringableEntity

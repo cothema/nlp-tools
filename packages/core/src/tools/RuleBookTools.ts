@@ -1,4 +1,4 @@
-import { Meta } from "../../../model/src/orthography/Meta";
+import { Meta } from "@cothema/nlp-model";
 import { IRuleBook } from "../interfaces/IRuleBook";
 
 export class RuleBookTools {

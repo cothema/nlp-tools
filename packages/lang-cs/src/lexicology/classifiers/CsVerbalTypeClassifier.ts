@@ -1,6 +1,6 @@
 import { ICsWordsRepository } from "../../repository/ICsWordsRepository";
-import { IClassifier } from "../../../../core/src/interfaces/IClassifier";
-import { LexicologyVerbalType } from "../../../../lang/src/lexicology/enums/LexicologyVerbalType";
+import { IClassifier } from "../../../../model/src/core/interfaces/IClassifier";
+import { LexicologyVerbalType } from "../../../../model/src/lexicology/enums/LexicologyVerbalType";
 import { Word } from "../../../../model/src/orthography/Word";
 
 export class CsVerbalTypeClassifier implements IClassifier<Word> {

@@ -1,6 +1,6 @@
 {
   "name": "@cothema/nlp-lang",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "General natural language processing (NLP) TypeScript package.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -35,6 +35,6 @@
   },
   "gitHead": "b79652c292d0b09cfa7dc1b69b6b552505f66af6",
   "dependencies": {
-    "@cothema/nlp-core": "^0.0.14"
+    "@cothema/nlp-core": "^0.0.15"
   }
 }

@@ -125,3 +125,4 @@ fabric.properties
 packages/*/src/**/*.js
 packages/*/src/**/*.js.map
 packages/*/src/**/*.d.ts
+**/package-lock.json

@@ -9,7 +9,7 @@
     "build:debug": "rm -rf dist && npm run generate:barrels && tsc --sourceMap -p ./tsconfig.json",
     "test": "echo \"Error: run tests from root\" && exit 1",
     "generate:barrels": "barrelsby -c ../barrelsby.json",
-    "prepare": "npm run generate:barrels && npm run build"
+    "prepare": "npm run build"
   },
   "author": "Miloš Havlíček <havlicek@cothema.com>",
   "maintainers": [

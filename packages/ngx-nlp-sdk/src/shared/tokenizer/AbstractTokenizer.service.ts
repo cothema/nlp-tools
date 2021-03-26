@@ -1,5 +1,5 @@
 import { Token } from "@cothema/nlp-model";
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../services/Api.service';
 
 export abstract class AbstractTokenizerService<T> {
 

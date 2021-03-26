@@ -1,4 +1,4 @@
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../services/Api.service';
 
 export abstract class AbstractClassifierService<T> {
 

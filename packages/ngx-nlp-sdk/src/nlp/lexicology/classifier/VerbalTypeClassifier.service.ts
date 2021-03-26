@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Word } from "@cothema/nlp-model";
-import { AbstractClassifierService } from '../../../shared/classifier/abstract-classifier.service';
-import { ApiService } from '../../../shared/services/api.service';
+import { AbstractClassifierService } from '../../../shared/classifier/AbstractClassifier.service';
+import { ApiService } from '../../../shared/services/Api.service';
 
 @Injectable({
   providedIn: 'root',

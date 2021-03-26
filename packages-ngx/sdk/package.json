@@ -2,8 +2,6 @@
   "name": "@cothema/ngx-nlp-sdk",
   "version": "0.0.18",
   "description": "Angular SDK for natural language processing (NLP) tools.",
-  "main": "src/public-api.js",
-  "typings": "src/public-api.d.ts",
   "scripts": {
     "build": "rm -rf dist && npm run generate:barrels && ng build",
     "build:debug": "rm -rf dist && npm run generate:barrels && ng build --sourceMap",

@@ -2,5 +2,6 @@
   "directory": "src",
   "delete": true,
   "include": [".ts$"],
-  "exclude": [".spec.ts$"]
+  "exclude": [".spec.ts$"],
+  "name": "public-api.ts"
 }

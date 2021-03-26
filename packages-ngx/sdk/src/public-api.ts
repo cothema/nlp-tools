@@ -3,9 +3,9 @@
  */
 
 export * from "./sdk.module";
-export * from "./interfaces/i-api-response";
+export * from "./test";
+export * from "./interfaces/IApiResponse";
 export * from "./nlp/lexicology/classifier/VerbalTypeClassifier.service";
-export * from "./nlp/lexicology/enums/LexicologyVerbalType";
 export * from "./nlp/orthography/tokenizer/SentenceTokenizer.service";
 export * from "./nlp/orthography/tokenizer/WordTokenizer.service";
 export * from "./nlp/phonetics/tokenizer/SyllableTokenizer.service";

@@ -1,0 +1,7 @@
+{
+  "directory": "src",
+  "delete": true,
+  "include": [".ts$"],
+  "exclude": [".spec.ts$"],
+  "name": "index.ts"
+}

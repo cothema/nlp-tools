@@ -8,15 +8,9 @@
     "lint": "tslint -p . --fix",
     "publish": "lerna run build && lerna publish"
   },
-  "author": {
-    "email": "havlicek@cothema.com",
-    "name": "Miloš Havlíček"
-  },
+  "author": "Miloš Havlíček <havlicek@cothema.com>",
   "maintainers": [
-    {
-      "email": "havlicek@cothema.com",
-      "name": "Miloš Havlíček"
-    }
+    "Miloš Havlíček <havlicek@cothema.com>"
   ],
   "license": "MIT",
   "repository": {

@@ -11,7 +11,7 @@ export class ApiService {
    * Set base URL before API usage:
    * ApiService.baseUrl = environment.apiUrl;
    */
-  public baseUrl: string;
+  public baseUrl: string = "";
 
   public apiVersion: string = "1";
 

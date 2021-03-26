@@ -1,0 +1,63 @@
+{
+  "name": "@cothema/ngx-nlp-sdk",
+  "version": "0.0.17",
+  "description": "Angular SDK for natural language processing (NLP) tools.",
+  "main": "src/public-api.js",
+  "typings": "src/public-api.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && npm run generate:barrels && ng build",
+    "build:debug": "rm -rf dist && npm run generate:barrels && ng build --sourceMap",
+    "test": "ng test",
+    "generate:barrels": "barrelsby -c ../barrelsby.json",
+    "prepare": "npm run generate:barrels && npm run build",
+    "lint": "ng lint"
+  },
+  "peerDependencies": {
+    "@cothema/nlp-lang": "^0.0.17",
+    "@angular/common": "^11.2.5",
+    "@angular/core": "^11.2.5"
+  },
+  "devDependencies": {
+    "@cothema/nlp-lang": "^0.0.17",
+    "@angular/common": "^11.2.5",
+    "@angular/core": "^11.2.5",
+    "@angular/compiler": "^11.2.5",
+    "@angular/platform-browser-dynamic": "~11.2.5",
+    "@angular-devkit/build-angular": "~0.1102.6",
+    "@angular/cli": "~11.2.4",
+    "@angular/compiler-cli": "~11.2.5",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^6.0.0",
+    "jasmine-core": "~3.6.0",
+    "jasmine-spec-reporter": "~5.0.0",
+    "karma": "~6.1.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^11.0.0",
+    "protractor": "~7.0.0",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~4.1.5"
+  },
+  "private": false,
+  "author": "Miloš Havlíček <havlicek@cothema.com>",
+  "maintainers": [
+    "Miloš Havlíček <havlicek@cothema.com>"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cothema/nlp-tools.git",
+    "directory": "packages/ngx-nlp-sdk"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/cothema/nlp-tools/issues"
+  },
+  "homepage": "https://github.com/cothema/nlp-tools/tree/master/packages-ngx/projects/sdk#readme"
+}

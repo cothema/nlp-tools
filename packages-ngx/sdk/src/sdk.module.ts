@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 
 @NgModule({
-  imports: [],
-  exports: [],
-  entryComponents: [],
-  providers: [],
   declarations: [],
+  imports: [],
+  exports: []
 })
 export class SdkModule {
 }

@@ -1,9 +1,9 @@
 import { Token } from "@cothema/nlp-model";
-import { ApiService } from '../services/Api.service';
+import { ApiService } from "../services/Api.service";
 
 export abstract class AbstractTokenizerService<T> {
 
-  protected abstract apiSubPath: string;
+  protected abstract apiSubPath: string = "";
 
   protected constructor(
     protected apiService: ApiService,
@@ -12,12 +12,12 @@ export abstract class AbstractTokenizerService<T> {
 
   async tokenize(
     input: string,
-    lang: string = 'cs',
+    lang: string = "cs",
   ): Promise<Token<T>[]> {
     const res = await this.apiService.post<T[]>(
-      this.apiSubPath + '/tokenize',
+      this.apiSubPath + "/tokenize",
       lang,
-      {string: input},
+      { string: input },
     );
 
     return res.data;
@@ -25,7 +25,7 @@ export abstract class AbstractTokenizerService<T> {
 
   async tokenizeWithOrig(
     word: string,
-    lang: string = 'cs',
+    lang: string = "cs",
   ): Promise<{
     syllables: Token<T>[];
     syllablesOrig: Token<T>[];
@@ -37,6 +37,10 @@ export abstract class AbstractTokenizerService<T> {
     const syllablesOrig = [];
 
     for (const token of tokens) {
+      if (token.origIndex === undefined || token.origLength === undefined) {
+        continue;
+      }
+
       syllablesOrig.push(
         // Clone syllables, but change fragment string from original string
         Object.assign(
@@ -46,16 +50,16 @@ export abstract class AbstractTokenizerService<T> {
             fragment: {
               string: wordChars.slice(
                 token.origIndex,
-                token.origIndex + token.origLength
-              ).join('')
-            }
-          }) as Token<T>
+                token.origIndex + token.origLength,
+              ).join(""),
+            },
+          }) as Token<T>,
       );
     }
 
     return {
       syllables: tokens,
-      syllablesOrig
+      syllablesOrig,
     };
   }
 

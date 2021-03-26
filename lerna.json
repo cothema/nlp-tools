@@ -1,7 +1,6 @@
 {
   "packages": [
-    "packages/*",
-    "packages-ngx/*"
+    "packages/*"
   ],
   "version": "0.0.20",
   "npmClient": "npm",

@@ -1,6 +1,6 @@
-# Cothema NLP Tools
+# Cothema NLP Static Tools
 
-Simple javascript natual language processing tool.
+Simple javascript natual language processing static tools.
 
 ## CZ edu webpages
 - https://eprehledy.cz/

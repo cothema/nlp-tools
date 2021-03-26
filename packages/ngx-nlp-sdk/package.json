@@ -1,7 +1,7 @@
 {
-  "name": "@cothema/nlp-lang-cs",
+  "name": "@cothema/ngx-nlp-sdk",
   "version": "0.0.16",
-  "description": "Czech natural language processing (NLP) TypeScript package.",
+  "description": "Angular SDK for natural language processing (NLP) tools.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
@@ -11,21 +11,15 @@
     "generate:barrels": "barrelsby -c ../../barrelsby.json",
     "prepare": "npm run generate:barrels && npm run build"
   },
-  "author": {
-    "email": "havlicek@cothema.com",
-    "name": "Miloš Havlíček"
-  },
+  "author": "Miloš Havlíček <havlicek@cothema.com>",
   "maintainers": [
-    {
-      "email": "havlicek@cothema.com",
-      "name": "Miloš Havlíček"
-    }
+    "Miloš Havlíček <havlicek@cothema.com>"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git://github.com/cothema/nlp-tools.git",
-    "directory": "packages/lang-cs"
+    "directory": "packages/model"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -33,9 +27,10 @@
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"
   },
-  "homepage": "https://github.com/cothema/nlp-tools/tree/master/packages/lang-cs#readme",
-  "gitHead": "b79652c292d0b09cfa7dc1b69b6b552505f66af6",
+  "homepage": "https://github.com/cothema/nlp-tools/tree/master/packages/ngx-nlp-sdk#readme",
   "dependencies": {
-    "@cothema/nlp-lang": "^0.0.16"
+    "@cothema/nlp-lang": "^0.0.16",
+    "@angular/common": "~11.2.5",
+    "@angular/core": "~11.2.5"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@cothema/ngx-nlp-sdk",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Angular SDK for natural language processing (NLP) tools.",
   "main": "src/public-api.js",
   "typings": "src/public-api.d.ts",
@@ -13,19 +13,19 @@
     "lint": "ng lint"
   },
   "peerDependencies": {
-    "@cothema/nlp-lang": "^0.0.17",
-    "@angular/common": "^11.2.5",
-    "@angular/core": "^11.2.5"
-  },
-  "devDependencies": {
-    "@cothema/nlp-lang": "^0.0.17",
     "@angular/common": "^11.2.5",
     "@angular/core": "^11.2.5",
-    "@angular/compiler": "^11.2.5",
-    "@angular/platform-browser-dynamic": "~11.2.5",
+    "@cothema/nlp-lang": "^0.0.17"
+  },
+  "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.6",
     "@angular/cli": "~11.2.4",
+    "@angular/common": "^11.2.5",
+    "@angular/compiler": "^11.2.5",
     "@angular/compiler-cli": "~11.2.5",
+    "@angular/core": "^11.2.5",
+    "@angular/platform-browser-dynamic": "~11.2.5",
+    "@cothema/nlp-lang": "^0.0.18",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",

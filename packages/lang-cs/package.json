@@ -1,6 +1,6 @@
 {
   "name": "@cothema/nlp-lang-cs",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Czech natural language processing (NLP) TypeScript package.",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -36,6 +36,6 @@
   "homepage": "https://github.com/cothema/nlp-tools/tree/master/packages/lang-cs#readme",
   "gitHead": "b79652c292d0b09cfa7dc1b69b6b552505f66af6",
   "dependencies": {
-    "@cothema/nlp-lang": "^0.0.16"
+    "@cothema/nlp-lang": "^0.0.17"
   }
 }

@@ -7,19 +7,15 @@
   "scripts": {
     "build": "rm -rf dist && npm run generate:barrels && tsc -p ./tsconfig.json",
     "build:debug": "rm -rf dist && npm run generate:barrels && tsc --sourceMap -p ./tsconfig.json",
-    "test": "echo \"Error: run tests from root\" && exit 1",
-    "generate:barrels": "barrelsby -c ../barrelsby.json",
+    "test": "jest --config=./jest.config.js",
+    "test:cov": "jest --config=./jest.config.js --coverage",
+    "test:watch": "jest --config=./jest.config.js --watch",
+    "generate:barrels": "barrelsby -c ../../barrelsby.json",
     "prepare": "npm run build"
   },
-  "author": {
-    "email": "havlicek@cothema.com",
-    "name": "Miloš Havlíček"
-  },
+  "author": "Miloš Havlíček <havlicek@cothema.com>",
   "maintainers": [
-    {
-      "email": "havlicek@cothema.com",
-      "name": "Miloš Havlíček"
-    }
+    "Miloš Havlíček <havlicek@cothema.com>"
   ],
   "license": "MIT",
   "repository": {

@@ -24,8 +24,7 @@
     "directory": "packages/model"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "directory": "dist"
+    "registry": "https://npm.pkg.github.com"
   },
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"

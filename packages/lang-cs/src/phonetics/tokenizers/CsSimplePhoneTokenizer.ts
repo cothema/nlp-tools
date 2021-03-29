@@ -1,14 +1,6 @@
-import { IMetaTokenizer } from "@cothema/nlp-core";
-import { IStringable } from "@cothema/nlp-model";
-import { IStringableTokenizer } from "@cothema/nlp-core";
-import { Token } from "@cothema/nlp-model";
-import { StringableTokenizer } from "@cothema/nlp-core";
-import { RuleBookTools } from "@cothema/nlp-core";
-import { Digraph } from "@cothema/nlp-model";
-import { Letter } from "@cothema/nlp-model";
-import { Meta } from "@cothema/nlp-model";
-import { Phone } from "@cothema/nlp-model";
-import { Voice } from "@cothema/nlp-model";
+import { IMetaTokenizer, IStringableTokenizer, RuleBookTools, StringableTokenizer } from "@cothema/nlp-core";
+import { Digraph, IStringable, Letter, Meta, Phone, Token, Voice } from "@cothema/nlp-model";
+import { CsNumberToTextConverter } from "../../general/converters/CsNumberToTextConverter";
 import { CsLetterTokenizer } from "../../orthography/tokenizers/CsLetterTokenizer";
 import { CsPairConsonantsDictionary } from "../dictionaries/CsPairConsonantsDictionary";
 import { CsDiphthongList } from "../lists/CsDiphthongList";
@@ -141,11 +133,14 @@ export class CsSimplePhoneTokenizer
     // TODO: split word to parts (prefix, root...) first
     // TODO: modifiable token
 
-    const letterTokens = this.letterTokenizer.tokenize(input);
+    const letterTokensPre = this.letterTokenizer.tokenize(input);
     const phoneTokens: Token<Phone>[] = [];
+
+    const letterTokens = this.solveAllNumbers(letterTokensPre);
 
     for (let i = 0; letterTokens[i]; i++) {
       const letterStr = letterTokens[i].fragment.toString().toLowerCase();
+
       const nextLetterStr = letterTokens[i + 1]?.fragment
         .toString()
         .toLowerCase();
@@ -225,5 +220,30 @@ export class CsSimplePhoneTokenizer
     }
 
     return this.solveVoice(phoneTokens);
+  }
+
+  private solveNumber(number: string): Token<Letter | Digraph>[] {
+    const numberConverter = new CsNumberToTextConverter();
+    const numberText = numberConverter.convert(number).words[0].toString();
+
+    return this.letterTokenizer.tokenize(numberText);
+  }
+
+  private solveAllNumbers(letterTokensPre: Token<Letter>[]): Token<Letter>[] {
+    const letterTokens: Token<Letter>[] = [];
+    for (let i = 0; letterTokensPre[i]; i++) {
+      if (!isNaN(+letterTokensPre[i].fragment.toString())) {
+        this.solveNumber(letterTokensPre[i].fragment.toString()).forEach(letter => {
+          letter.orig = letterTokensPre[i].orig;
+          letter.origIndex = letterTokensPre[i].origIndex;
+          letter.origLength = letterTokensPre[i].origLength;
+
+          letterTokens.push(letter);
+        });
+      } else {
+        letterTokens.push(letterTokensPre[i]);
+      }
+    }
+    return letterTokens;
   }
 }

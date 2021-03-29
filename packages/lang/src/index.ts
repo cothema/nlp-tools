@@ -14,6 +14,7 @@ export * from "./orthography/tokenizers/LetterTokenizer";
 export * from "./orthography/tokenizers/SentenceTokenizer";
 export * from "./orthography/tokenizers/WordTokenizer";
 export * from "./orthography/validators/LetterValidator";
+export * from "./orthography/validators/NumberValidator";
 export * from "./orthography/validators/SentenceValidator";
 export * from "./phonetics/lists/SimpleVowelList";
 export * from "./semantics/tokenizers/EmailAddressTokenizer";

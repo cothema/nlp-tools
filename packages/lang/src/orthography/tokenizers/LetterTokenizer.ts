@@ -1,11 +1,8 @@
-import { IStringable } from "@cothema/nlp-model";
-import { IStringableTokenizer } from "@cothema/nlp-core";
-import { Token } from "@cothema/nlp-model";
-import { StringableTokenizer } from "@cothema/nlp-core";
+import { IStringableTokenizer, StringableTokenizer } from "@cothema/nlp-core";
+import { Digraph, IStringable, Letter, Token } from "@cothema/nlp-model";
 import { DigraphHelper } from "../helpers/DigraphHelper";
-import { Digraph } from "@cothema/nlp-model";
-import { Letter } from "@cothema/nlp-model";
 import { LetterValidator } from "../validators/LetterValidator";
+import { NumberValidator } from "../validators/NumberValidator";
 import { CharTokenizer } from "./CharTokenizer";
 
 /**
@@ -16,6 +13,8 @@ export class LetterTokenizer
   implements IStringableTokenizer<Letter> {
   validator = new LetterValidator();
   digraphs: Digraph[] = [];
+  allowNumbers: boolean = true;
+  numberValidator = new NumberValidator();
 
   tokenize(input: IStringable): Token<Letter | Digraph>[] {
     const letterTokens: Token<Letter>[] = [];
@@ -24,7 +23,13 @@ export class LetterTokenizer
     for (let i = 0, tokenIndex = 0; charTokens[i]; i++, tokenIndex++) {
       // Check each char
 
-      if (!this.validator.validate(charTokens[i].fragment)) {
+      if (
+        this.validator.validate(charTokens[i].fragment)
+        ||
+        (this.allowNumbers === true && this.numberValidator.validate(charTokens[i].fragment))
+      ) {
+        // OK
+      } else {
         // Ignore invalid chars (spaces, special chars, punctuation etc.)
         continue;
       }

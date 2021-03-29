@@ -1,9 +1,5 @@
-import { IStringable } from "@cothema/nlp-model";
-import { IStringableTokenizer } from "@cothema/nlp-core";
-import { Token } from "@cothema/nlp-model";
-import { StringableTokenizer } from "@cothema/nlp-core";
-import { Phone } from "@cothema/nlp-model";
-import { Syllable } from "@cothema/nlp-model";
+import { IStringableTokenizer, StringableTokenizer } from "@cothema/nlp-core";
+import { IStringable, Phone, Syllable, Token } from "@cothema/nlp-model";
 import { CsDiphthongList } from "../lists/CsDiphthongList";
 import { CsVowelList } from "../lists/CsVowelList";
 import { CsSimplePhoneTokenizer } from "./CsSimplePhoneTokenizer";
@@ -21,7 +17,9 @@ export class CsSyllableTokenizer
     this.clearBuffer();
     this.inputStrAsArray = Array.from(input.toString());
 
-    const phoneTokens = new CsSimplePhoneTokenizer().tokenize(input);
+    const phoneTokenizer = new CsSimplePhoneTokenizer();
+
+    const phoneTokens = phoneTokenizer.tokenize(input);
 
     for (let i = 0; phoneTokens[i]; i++) {
       this.newSyllableBuffer.push(phoneTokens[i]);
@@ -107,7 +105,11 @@ export class CsSyllableTokenizer
   private solveOrigLength(entityArray: Token[]): number {
     const firstEntity = entityArray[0];
     const lastEntity = entityArray[entityArray.length - 1];
-    return lastEntity.origIndex + lastEntity.origLength - firstEntity.origIndex;
+
+    let lowestIndex = firstEntity.origIndex;
+    let highestIndex = lastEntity.origIndex + lastEntity.origLength - 1;
+
+    return highestIndex - lowestIndex + 1;
   }
 
   private pushNewSyllable() {

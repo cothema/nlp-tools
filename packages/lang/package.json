@@ -24,7 +24,8 @@
     "directory": "packages/lang"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "directory": "dist"
   },
   "bugs": {
     "url": "https://github.com/cothema/nlp-tools/issues"
@@ -32,6 +33,7 @@
   "homepage": "https://github.com/cothema/nlp-tools/tree/master/packages/lang#readme",
   "gitHead": "b79652c292d0b09cfa7dc1b69b6b552505f66af6",
   "dependencies": {
-    "@cothema/nlp-core": "^0.0.20"
+    "@cothema/nlp-core": "^0.0.20",
+    "@cothema/nlp-model": "^0.0.20"
   }
 }
